@@ -5,30 +5,30 @@
             <div class="row g-3">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Product Name</label>
-                    <input type="text" name="" id="" class="form-control">
+                    <input type="text" name="" id="" class="form-control" name="productName"[(ngModel)]=productName >
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Product Image</label>
-                    <input type="file" name="" id="" class="form-control">
+                    <input type="file" name="" id="" class="form-control" name="productImage"[(ngModel)]=productImage>
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
-                    <label for="" class="form-label">Product Description</label>
-                    <input type="text" name="" id="" class="form-control">
+                    <label for="" class="form-label">Product Details</label>
+                    <input type="text" name="" id="" class="form-control" name="ProductDetail"[(ngModel)]=ProductDetail>
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Sellar Name</label>
-                    <input type="text" name="" id="" class="form-control">
+                    <input type="text" name="" id="" class="form-control" name="sellarName"[(ngModel)]=sellarName>
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">Quantity</label>
-                    <input type="text" name="" id="" class="form-control">
+                    <input type="text" name="" id="" class="form-control" name="quantity"[(ngModel)]=quantity>
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
-                    <label for="" class="form-label">Rating</label>
-                    <input type="text" name="" id="" class="form-control">
+                    <label for="" class="form-label">Rate</label>
+                    <input type="text" name="" id="" class="form-control" name="rate"[(ngModel)]=rate>
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
-                    <button class="btn btn-primary">Submit</button>
+                    <button class="btn btn-primary"(click)="readValue()">Submit</button>
 
                 </div>
             </div>
